@@ -53,22 +53,92 @@
 //     }
 // }
 
-let name = "madam";
-// console.log(name[4]);
-let reverse = ""
-for(let i = name.length - 1; i >= 0 ;i--){
-    console.log(name[i])
-    reverse += name[i]
-}
+// let name = "madam";
+// // console.log(name[4]);
+// let reverse = ""
+// for(let i = name.length - 1; i >= 0 ;i--){
+//     console.log(name[i])
+//     reverse += name[i]
+// }
 
-if(name === reverse){
-    console.log(name, " is palindrome")
-} else {
-    console.log("Not");
-}
+// if(name === reverse){
+//     console.log(name, " is palindrome")
+// } else {
+//     console.log("Not");
+// }
 
 
 // let i is 1 and ending value is i >= 100
 // for( i =0 => i >= 100 => i++){
 //     print(i)
 // }
+
+
+// for, while, do while
+
+// 1 - 10
+// console.log(1)
+// console.log(2)
+// console.log(1000)
+
+// for(let i = 1; i <= 10; i++){
+//     console.log(i)
+// }
+
+// for(let i = 1; i <= 10; i++){
+//     if(i%2 === 0){
+//         console.log(i)
+//     }
+// }
+
+// let table = 9
+
+// for(let i = 1; i <= 10; i++){
+//     console.log(table + " X " + i + " = " + table*i) 
+// }
+
+// 9 X 1 = 9
+
+// sum of first 10 natural no
+
+// let sum = 0;
+// for(let i = 1; i <= 10; i++){
+//     sum = sum + i
+// }
+
+// console.log(sum)
+
+// let name = "sana safinaz";
+// let reverse = ""
+
+// for(let i = 0; i <= name.length - 1; i++){
+//     console.log(name[i])
+// }
+
+// let factorial = 1;
+// let n = 5
+
+// for(let i = 1; i <= n; i++){
+//     if(n === 0 && n === 1){
+//         console.log("Answer is 1")
+//         break
+//     }
+//     factorial = factorial * i;
+// }
+// console.log(factorial)
+
+let num = 10;
+let isPrime = true
+
+for(let i = 2; i < num; i++){
+    if(num % i === 0){
+        isPrime = false;
+        break
+    }
+}
+
+if(isPrime){
+    console.log("Prime number")
+} else {
+    console.log("Not")
+}

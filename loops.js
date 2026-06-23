@@ -127,18 +127,84 @@
 // }
 // console.log(factorial)
 
-let num = 10;
-let isPrime = true
+// let num = 10;
+// let isPrime = true
 
-for(let i = 2; i < num; i++){
-    if(num % i === 0){
-        isPrime = false;
-        break
+// for(let i = 2; i < num; i++){
+//     if(num % i === 0){
+//         isPrime = false;
+//         break
+//     }
+// }
+
+// if(isPrime){
+//     console.log("Prime number")
+// } else {
+//     console.log("Not")
+// }
+
+
+// continue // break
+// for(let i = 1; i <= 10; i++){
+//     if(i === 7){
+//         break
+//     }
+//     console.log(i)
+// }
+
+// 1 - 100
+
+// for(let i = 1; i <= 100; i++){
+//     if(i%3 === 0 && i%7 === 0){
+//         if(i === 63){
+//             continue
+//         }
+//         console.log(i)
+//     }
+// }
+
+// while
+// do while
+
+// let i = 1;
+// while(i <= 10){
+//     console.log(i)
+//     i++;
+// }
+// let i = 1;
+// do{
+//     console.log(i);
+//     i++
+// }while(i === 10)
+
+
+// 1
+
+// Maths Random number
+
+let secretNo = 10;
+let count = 10;
+// let guessed = false
+
+
+while(count > 0){
+    let userNo = Number(prompt("Enter your number"))
+    if(secretNo === userNo){
+        console.log("Congratulation, you guessed the correct number")
+        break;
+    }
+
+    else if(userNo > secretNo){
+        console.log("High, guess low");
+        count--
+    }
+    else if(userNo < secretNo){
+        console.log("Low, guess high");
+        count--
+    } else{
+        console.log("Invalid number")
     }
 }
 
-if(isPrime){
-    console.log("Prime number")
-} else {
-    console.log("Not")
-}
+// 76
+"76"
